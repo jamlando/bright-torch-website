@@ -18,41 +18,20 @@ export default function Home() {
           />
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-start justify-center pt-20">
             <div className="text-center text-white">
-              <div className="bg-black bg-opacity-30 rounded-lg p-8 backdrop-blur-sm">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-                  Illuminate what&apos;s possible.
-                </h1>
-                <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
-                  Helping organizations turn strategy into results through people, process, and purpose.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/about" className="btn-secondary">
-                    Learn More
-                  </Link>
-                  <Link href="/contact" className="btn-primary">
-                    Book a Consultation
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Mission Statement Section */}
-        <section 
-          className="relative h-96 md:h-[500px] bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/images/drew-beamer-F7S8NC7vwuQ-unsplash.jpg)' }}
-        >
-          <div className="absolute inset-0 bg-slate-blue bg-opacity-75"></div>
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-            <div className="text-center text-white w-full">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-2xl" style={{ color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5)' }}>
+                Illuminate what&apos;s possible.
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-xl" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.5)' }}>
                 Helping organizations turn strategy into results through people, process, and purpose.
-              </h2>
-              <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
-                We believe that sustainable transformation happens when these three elements align, 
-                creating a powerful foundation for lasting change and measurable success.
               </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/about" className="btn-secondary" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+                  Learn More
+                </Link>
+                <Link href="/contact" className="btn-primary" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+                  Book a Consultation
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -144,9 +123,12 @@ export default function Home() {
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">About Bright Torch</h2>
                 <p className="text-lg text-gray-600 mb-6">
                   Founded by Nicholas Hymer, Bright Torch Consulting specializes in bridging the gap between 
-                  strategy and execution during organizational transformations. We believe that sustainable 
-                  change happens when people, process, and purpose align.
+                  strategy and execution during organizational transformations.
                 </p>
+                <blockquote className="text-xl text-slate-blue font-medium italic mb-6 border-l-4 border-knoxville-orange pl-6">
+                  "We believe that sustainable transformation happens when these three elements align, 
+                  creating a powerful foundation for lasting change and measurable success."
+                </blockquote>
                 <p className="text-lg text-gray-600 mb-8">
                   Our approach combines deep expertise in change management with practical, results-driven 
                   methodologies that respect both the human and operational aspects of transformation.
