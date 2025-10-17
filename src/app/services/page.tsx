@@ -292,8 +292,8 @@ export default function Services() {
               </div>
               <div className="relative">
                 <Image
-                  src="/images/bridgeView.jpg"
-                  alt="Bridge representing transformation and connection"
+                  src="/images/drew-beamer-GiBRCzuZ5gw-unsplash.jpg"
+                  alt="Professional workspace representing successful transformation results"
                   width={500}
                   height={400}
                   className="rounded-lg shadow-lg"

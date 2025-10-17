@@ -10,8 +10,8 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/backgroundV1.jpg)' }}>
-          <div className="absolute inset-0 bg-slate-blue bg-opacity-60"></div>
+        <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/drew-beamer-F7S8NC7vwuQ-unsplash.jpg)' }}>
+          <div className="absolute inset-0 bg-slate-blue bg-opacity-70"></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
             <div className="text-center text-white">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -132,8 +132,8 @@ export default function Home() {
               </div>
               <div className="relative">
                 <Image
-                  src="/images/nickImage.jpg"
-                  alt="Nicholas Hymer, Founder of Bright Torch Consulting"
+                  src="/images/angela-loria-naq7jbsipqE-unsplash.jpg"
+                  alt="Professional team collaboration representing Bright Torch Consulting's approach"
                   width={500}
                   height={600}
                   className="rounded-lg shadow-lg"
