@@ -32,7 +32,7 @@ export default function Insights() {
       readTime: '8 min read',
       date: 'December 2024',
       featured: true,
-      image: '/images/bridgeView.jpg'
+      image: '/images/drew-beamer-F7S8NC7vwuQ-unsplash.jpg'
     },
     {
       id: 'leadership-resilience',
@@ -72,7 +72,7 @@ export default function Insights() {
       readTime: '9 min read',
       date: 'August 2024',
       featured: false,
-      image: '/images/bridgeView.jpg'
+      image: '/images/drew-beamer-F7S8NC7vwuQ-unsplash.jpg'
     },
     {
       id: 'change-readiness',
@@ -154,7 +154,6 @@ export default function Insights() {
                       height={400}
                       className="rounded-lg shadow-lg"
                     />
-                    <div className="absolute inset-0 bg-slate-blue bg-opacity-20 rounded-lg"></div>
                   </div>
                 </div>
               </div>

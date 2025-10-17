@@ -26,7 +26,7 @@ export default function CaseStudies() {
         author: 'Dr. Kathleen Toomey',
         title: 'Commissioner, Georgia Department of Public Health'
       },
-      image: '/images/bridgeView.jpg',
+      image: '/images/stephen-ellis-17I0RhymL9M-unsplash.jpg',
       featured: true
     },
     {
@@ -50,7 +50,7 @@ export default function CaseStudies() {
         author: 'Sarah Johnson',
         title: 'Chief Operating Officer'
       },
-      image: '/images/knoxvilleDt.jpg',
+      image: '/images/drew-beamer-GiBRCzuZ5gw-unsplash.jpg',
       featured: false
     },
     {
