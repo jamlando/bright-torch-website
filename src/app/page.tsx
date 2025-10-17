@@ -10,23 +10,29 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/stephen-ellis-17I0RhymL9M-unsplash.jpg)' }}>
-          <div className="absolute inset-0 bg-slate-blue bg-opacity-70"></div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <section className="relative h-screen overflow-hidden">
+          <img
+            src="/images/hero-bg.jpg"
+            alt="Professional workspace representing organizational transformation"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-start justify-center pt-20">
             <div className="text-center text-white">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Illuminate what&apos;s possible.
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-                Helping organizations turn strategy into results through people, process, and purpose.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/about" className="btn-secondary">
-                  Learn More
-                </Link>
-                <Link href="/contact" className="btn-primary">
-                  Book a Consultation
-                </Link>
+              <div className="bg-black bg-opacity-30 rounded-lg p-8 backdrop-blur-sm">
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
+                  Illuminate what&apos;s possible.
+                </h1>
+                <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
+                  Helping organizations turn strategy into results through people, process, and purpose.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link href="/about" className="btn-secondary">
+                    Learn More
+                  </Link>
+                  <Link href="/contact" className="btn-primary">
+                    Book a Consultation
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
