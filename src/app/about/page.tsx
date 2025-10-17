@@ -9,6 +9,25 @@ export default function About() {
       <Header />
       
       <main className="flex-grow">
+        {/* Hero Section */}
+        <section className="bg-gradient-to-br from-slate-blue to-malibu-blue text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl font-bold font-merriweather mb-6">
+                Nicholas Hymer
+              </h1>
+              <p className="text-xl md:text-2xl text-blue-100 mb-8">
+                Founder & Principal Consultant
+              </p>
+              <blockquote className="text-lg md:text-xl italic text-blue-100 max-w-4xl mx-auto">
+                "Change is inevitable, but transformation is intentional. Our role is to make 
+                that transformation clear, intentional, and sustainable by ensuring that every 
+                strategy has a clear path to execution."
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
         {/* Nicholas Hymer Bio Section */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,19 +83,6 @@ export default function About() {
                       <span className="text-gray-700">Organizational Development Specialist</span>
                     </li>
                   </ul>
-                </div>
-
-                {/* Philosophy */}
-                <div className="mb-8">
-                  <h3 className="text-2xl font-semibold mb-4 text-slate-blue">Our Philosophy</h3>
-                  <blockquote className="border-l-4 border-malibu-blue pl-6 italic text-lg text-gray-700">
-                    "Change is inevitable, but transformation is intentional. Our role is to make 
-                    that transformation clear, intentional, and sustainable by ensuring that every 
-                    strategy has a clear path to execution."
-                  </blockquote>
-                  <p className="text-gray-600 mt-4">
-                    — Nicholas Hymer, Founder
-                  </p>
                 </div>
 
               </div>
