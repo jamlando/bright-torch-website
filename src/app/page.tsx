@@ -15,7 +15,7 @@ export default function Home() {
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
             <div className="text-center text-white">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Illuminate what's possible.
+                Illuminate what&apos;s possible.
               </h1>
               <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
                 Helping organizations turn strategy into results through people, process, and purpose.
@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Strategy</h3>
                 <p className="text-gray-600 mb-4">
-                  Clear direction and actionable plans that align with your organization's vision.
+                  Clear direction and actionable plans that align with your organization&apos;s vision.
                 </p>
                 <Link href="/services" className="text-malibu-blue hover:text-knoxville-orange font-medium">
                   Learn More →
