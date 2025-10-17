@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       
       <main className="flex-grow">
-        {/* Hero Section */}
+        {/* Hero Section - Updated for deployment */}
         <section className="relative h-screen overflow-hidden">
           <img
             src="/images/hero-bg.jpg"
