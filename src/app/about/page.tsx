@@ -9,20 +9,6 @@ export default function About() {
       <Header />
       
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="bg-slate-blue text-white py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                About Bright Torch
-              </h1>
-              <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-                Founded by Nicholas Hymer, we specialize in bridging the gap between strategy and execution during organizational transformations.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Nicholas Hymer Bio Section */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

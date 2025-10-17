@@ -94,21 +94,6 @@ export default function Insights() {
       <Header />
       
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="bg-slate-blue text-white py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Insights & Thought Leadership
-              </h1>
-              <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-                Stay informed with the latest insights on organizational transformation, 
-                change management, and leadership development.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Featured Insight */}
         {featuredInsight && (
           <section className="py-16">
