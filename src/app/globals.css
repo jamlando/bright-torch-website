@@ -1,26 +1,139 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@300;400;700&display=swap');
 
 :root {
+  /* Bright Torch Brand Colors */
+  --color-slate-blue: #2E4057;
+  --color-malibu-blue: #5BC0EB;
+  --color-knoxville-orange: #FF8200;
+  --color-light-gray: #F5F5F5;
+  --color-charcoal: #333333;
+  
+  /* Background and foreground */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: var(--color-charcoal);
 }
 
 @theme inline {
+  /* Brand Colors */
+  --color-slate-blue: var(--color-slate-blue);
+  --color-malibu-blue: var(--color-malibu-blue);
+  --color-knoxville-orange: var(--color-knoxville-orange);
+  --color-light-gray: var(--color-light-gray);
+  --color-charcoal: var(--color-charcoal);
+  
+  /* System Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  
+  /* Typography */
+  --font-serif: 'Merriweather', serif;
+  --font-sans: 'Lato', sans-serif;
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+}
+
+/* Typography Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-slate-blue);
+}
+
+h1 {
+  font-size: 3rem; /* 48px */
+}
+
+h2 {
+  font-size: 2.25rem; /* 36px */
+}
+
+h3 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h6 {
+  font-size: 1.125rem; /* 18px */
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--color-knoxville-orange);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #E67300;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-malibu-blue);
+  border: 2px solid var(--color-malibu-blue);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-malibu-blue);
+  color: white;
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--color-light-gray);
+  border: 1px solid #E5E5E5;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-input {
+  border: 1px solid #D1D5DB;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  font-family: 'Lato', sans-serif;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-knoxville-orange);
+}
+
+.form-label {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
