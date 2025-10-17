@@ -10,7 +10,7 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/drew-beamer-F7S8NC7vwuQ-unsplash.jpg)' }}>
+        <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/stephen-ellis-17I0RhymL9M-unsplash.jpg)' }}>
           <div className="absolute inset-0 bg-slate-blue bg-opacity-70"></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
             <div className="text-center text-white">
@@ -34,13 +34,11 @@ export default function Home() {
 
         {/* Mission Statement Section */}
         <section 
-          className="relative bg-cover bg-center bg-no-repeat h-96 md:h-[500px]"
-          style={{ 
-            backgroundImage: 'url(/images/stephen-ellis-bg.jpg)'
-          }}
+          className="relative h-96 md:h-[500px] bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/images/drew-beamer-F7S8NC7vwuQ-unsplash.jpg)' }}
         >
           <div className="absolute inset-0 bg-slate-blue bg-opacity-75"></div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 h-full flex items-center">
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
             <div className="text-center text-white w-full">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Helping organizations turn strategy into results through people, process, and purpose.
