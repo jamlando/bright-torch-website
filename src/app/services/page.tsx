@@ -292,13 +292,12 @@ export default function Services() {
               </div>
               <div className="relative">
                 <Image
-                  src="/images/drew-beamer-GiBRCzuZ5gw-unsplash.jpg"
+                  src="/images/bridgeView.jpg"
                   alt="Professional workspace representing successful transformation results"
                   width={500}
                   height={400}
                   className="rounded-lg shadow-lg"
                 />
-                <div className="absolute inset-0 bg-slate-blue bg-opacity-20 rounded-lg"></div>
               </div>
             </div>
           </div>

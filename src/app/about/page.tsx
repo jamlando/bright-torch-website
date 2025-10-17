@@ -108,7 +108,7 @@ export default function About() {
 
               <div className="relative">
                 <Image
-                  src="/images/nickImage.jpg"
+                  src="/images/headshot.jpg"
                   alt="Nicholas Hymer, Founder of Bright Torch Consulting"
                   width={500}
                   height={600}
