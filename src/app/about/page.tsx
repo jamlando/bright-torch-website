@@ -93,6 +93,26 @@ export default function About() {
                   </p>
                 </div>
 
+              </div>
+
+              <div className="space-y-6">
+                <div className="relative">
+                  <Image
+                    src="/images/headshot.jpg"
+                    alt="Nicholas Hymer, Founder of Bright Torch Consulting"
+                    width={500}
+                    height={600}
+                    className="rounded-lg shadow-lg"
+                    priority
+                  />
+                  <div className="absolute bottom-4 left-4 bg-white bg-opacity-90 p-4 rounded-lg">
+                    <p className="text-sm text-gray-600 font-medium">
+                      Nicholas Hymer<br />
+                      <span className="text-knoxville-orange">Founder & Principal Consultant</span>
+                    </p>
+                  </div>
+                </div>
+                
                 {/* CTA to Services */}
                 <div className="bg-light-gray p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-3 text-slate-blue">Ready to Transform Your Organization?</h3>
@@ -103,23 +123,6 @@ export default function About() {
                   <Link href="/services" className="btn-primary">
                     Explore Our Services
                   </Link>
-                </div>
-              </div>
-
-              <div className="relative">
-                <Image
-                  src="/images/headshot.jpg"
-                  alt="Nicholas Hymer, Founder of Bright Torch Consulting"
-                  width={500}
-                  height={600}
-                  className="rounded-lg shadow-lg"
-                  priority
-                />
-                <div className="absolute bottom-4 left-4 bg-white bg-opacity-90 p-4 rounded-lg">
-                  <p className="text-sm text-gray-600 font-medium">
-                    Nicholas Hymer<br />
-                    <span className="text-knoxville-orange">Founder & Principal Consultant</span>
-                  </p>
                 </div>
               </div>
             </div>
