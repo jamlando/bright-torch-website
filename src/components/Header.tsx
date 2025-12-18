@@ -41,18 +41,6 @@ export default function Header() {
               Services
             </Link>
             <Link 
-              href="/case-studies" 
-              className="text-slate-blue hover:text-knoxville-orange transition-colors duration-200 font-medium"
-            >
-              Case Studies
-            </Link>
-            <Link 
-              href="/insights" 
-              className="text-slate-blue hover:text-knoxville-orange transition-colors duration-200 font-medium"
-            >
-              Insights
-            </Link>
-            <Link 
               href="/contact" 
               className="text-slate-blue hover:text-knoxville-orange transition-colors duration-200 font-medium"
             >
@@ -87,3 +75,6 @@ export default function Header() {
     </header>
   );
 }
+
+
+

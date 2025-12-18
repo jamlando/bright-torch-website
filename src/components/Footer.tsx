@@ -48,16 +48,6 @@ export default function Footer() {
                   Services
                 </Link>
               </li>
-              <li>
-                <Link href="/case-studies" className="text-gray-300 hover:text-knoxville-orange transition-colors duration-200">
-                  Case Studies
-                </Link>
-              </li>
-              <li>
-                <Link href="/insights" className="text-gray-300 hover:text-knoxville-orange transition-colors duration-200">
-                  Insights
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -102,3 +92,6 @@ export default function Footer() {
     </footer>
   );
 }
+
+
+
