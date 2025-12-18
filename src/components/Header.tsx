@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Navigation component - Case Studies and Insights hidden per client request
 export default function Header() {
   return (
     <header className="bg-white shadow-sm border-b border-gray-200">
