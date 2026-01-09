@@ -13,15 +13,14 @@ export default function About() {
         <section className="bg-gradient-to-br from-slate-blue to-malibu-blue text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
-              <div className="inline-block p-4 rounded-lg bg-white/10 backdrop-blur-sm shadow-lg">
+              <div className="inline-block p-4 rounded-lg bg-white shadow-lg">
                 <Image
                   src="/images/brightTorchLogoV1.png"
                   alt="Bright Torch Consulting"
                   width={200}
                   height={101}
-                  className="h-16 w-auto mx-auto drop-shadow-2xl"
+                  className="h-16 w-auto mx-auto"
                   priority
-                  style={{ filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 8px rgba(255, 255, 255, 0.5))' }}
                 />
               </div>
             </div>
