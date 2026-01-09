@@ -18,10 +18,10 @@ export default function Home() {
           />
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-start justify-center pt-16 sm:pt-20 md:pt-24">
             <div className="text-center text-white">
-              <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-[7.5rem] font-bold mb-4 sm:mb-6 drop-shadow-2xl" style={{ color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5)' }}>
+              <h1 className="text-[5rem] font-bold mb-4 sm:mb-6 drop-shadow-2xl" style={{ color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5)' }}>
                 Illuminate what&apos;s possible.
               </h1>
-              <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 sm:mb-8 max-w-3xl mx-auto drop-shadow-xl" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.5)' }}>
+              <p className="text-[2rem] mb-6 sm:mb-8 max-w-3xl mx-auto drop-shadow-xl" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.5)' }}>
                 Helping organizations turn strategy into results<br className="hidden sm:block" />
                 through people, process, and purpose.
               </p>
