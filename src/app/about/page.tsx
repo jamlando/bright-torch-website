@@ -139,21 +139,50 @@ export default function About() {
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
-              {/* Placeholder logos - client will upload real logos later */}
-              <div className="bg-light-gray border-2 border-dashed border-gray-300 rounded-lg p-8 w-full aspect-video flex items-center justify-center">
-                <span className="text-gray-400 text-sm font-medium text-center">Chick-fil-A<br />Logo</span>
+              <div className="w-full aspect-video flex items-center justify-center p-4">
+                <Image
+                  src="/images/Chick-fil-A-header-logo.svg"
+                  alt="Chick-fil-A Logo"
+                  width={200}
+                  height={100}
+                  className="object-contain max-h-full"
+                />
               </div>
-              <div className="bg-light-gray border-2 border-dashed border-gray-300 rounded-lg p-8 w-full aspect-video flex items-center justify-center">
-                <span className="text-gray-400 text-sm font-medium text-center">Aflac<br />Logo</span>
+              <div className="w-full aspect-video flex items-center justify-center p-4">
+                <Image
+                  src="/images/Aflac+Logo.png"
+                  alt="Aflac Logo"
+                  width={200}
+                  height={100}
+                  className="object-contain max-h-full"
+                />
               </div>
-              <div className="bg-light-gray border-2 border-dashed border-gray-300 rounded-lg p-8 w-full aspect-video flex items-center justify-center">
-                <span className="text-gray-400 text-sm font-medium text-center">UBS Financial<br />Services Logo</span>
+              <div className="w-full aspect-video flex items-center justify-center p-4">
+                <Image
+                  src="/images/UBS_Logo_Semibold.svg"
+                  alt="UBS Financial Services Logo"
+                  width={200}
+                  height={100}
+                  className="object-contain max-h-full"
+                />
               </div>
-              <div className="bg-light-gray border-2 border-dashed border-gray-300 rounded-lg p-8 w-full aspect-video flex items-center justify-center">
-                <span className="text-gray-400 text-sm font-medium text-center">Georgia Department<br />of Health Logo</span>
+              <div className="w-full aspect-video flex items-center justify-center p-4">
+                <Image
+                  src="/images/georgiadph_logo.jpg"
+                  alt="Georgia Department of Health Logo"
+                  width={200}
+                  height={100}
+                  className="object-contain max-h-full"
+                />
               </div>
-              <div className="bg-light-gray border-2 border-dashed border-gray-300 rounded-lg p-8 w-full aspect-video flex items-center justify-center">
-                <span className="text-gray-400 text-sm font-medium text-center">Prinzo Group<br />Logo</span>
+              <div className="w-full aspect-video flex items-center justify-center p-4">
+                <Image
+                  src="/images/the_prinzo_group_logo.jpg"
+                  alt="Prinzo Group Logo"
+                  width={200}
+                  height={100}
+                  className="object-contain max-h-full"
+                />
               </div>
             </div>
           </div>
