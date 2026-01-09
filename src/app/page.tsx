@@ -18,17 +18,18 @@ export default function Home() {
           />
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-start justify-center pt-20">
             <div className="text-center text-white">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-2xl" style={{ color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5)' }}>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-2xl" style={{ color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5)' }}>
                 Illuminate what&apos;s possible.
               </h1>
-              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-xl" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.5)' }}>
-                Helping organizations turn strategy into results through people, process, and purpose.
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto drop-shadow-xl" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.5)' }}>
+                Helping organizations turn strategy into results<br className="hidden sm:block" />
+                through people, process, and purpose.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/about" className="btn-secondary" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+                <Link href="/about" className="btn-blue w-full sm:w-auto" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
                   Learn More
                 </Link>
-                <Link href="/contact" className="btn-primary" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+                <Link href="/contact" className="btn-primary w-full sm:w-auto" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
                   Book a Consultation
                 </Link>
               </div>

@@ -179,24 +179,24 @@ export default function Services() {
                       
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                          <h4 className="font-semibold text-slate-blue mb-3">Key Benefits</h4>
-                          <ul className="space-y-2">
-                            {service.benefits.map((benefit, index) => (
-                              <li key={index} className="flex items-start">
-                                <div className="w-2 h-2 bg-knoxville-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span className="text-gray-700 text-sm">{benefit}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        
-                        <div>
                           <h4 className="font-semibold text-slate-blue mb-3">What You'll Get</h4>
                           <ul className="space-y-2">
                             {service.deliverables.map((deliverable, index) => (
                               <li key={index} className="flex items-start">
                                 <div className="w-2 h-2 bg-malibu-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
                                 <span className="text-gray-700 text-sm">{deliverable}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-semibold text-slate-blue mb-3">Key Benefits</h4>
+                          <ul className="space-y-2">
+                            {service.benefits.map((benefit, index) => (
+                              <li key={index} className="flex items-start">
+                                <div className="w-2 h-2 bg-knoxville-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span className="text-gray-700 text-sm">{benefit}</span>
                               </li>
                             ))}
                           </ul>

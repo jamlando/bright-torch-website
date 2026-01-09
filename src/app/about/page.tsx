@@ -12,6 +12,16 @@ export default function About() {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-slate-blue to-malibu-blue text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <Image
+                src="/images/brightTorchLogoV1.png"
+                alt="Bright Torch Consulting"
+                width={200}
+                height={101}
+                className="h-16 w-auto mx-auto mb-6"
+                priority
+              />
+            </div>
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold font-merriweather mb-6">
                 Nicholas Hymer
@@ -40,7 +50,7 @@ export default function About() {
                   <p className="text-lg text-gray-600 mb-6">
                     Nicholas Hymer is the founder and principal consultant of Bright Torch Consulting, 
                     bringing over 15 years of experience in organizational transformation, change management, 
-                    and strategic execution across both public and private sectors.
+                    and strategic execution with Fortune 250 companies in both public and private sectors.
                   </p>
                   
                   <p className="text-lg text-gray-600 mb-6">
@@ -64,23 +74,11 @@ export default function About() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="w-2 h-2 bg-knoxville-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700">Certified Change Management Professional (CCMP)</span>
+                      <span className="text-gray-700">Prosci Certified Change Practitioner</span>
                     </li>
                     <li className="flex items-start">
                       <div className="w-2 h-2 bg-knoxville-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700">Project Management Professional (PMP)</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-knoxville-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700">Lean Six Sigma Black Belt</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-knoxville-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700">Agile Certified Practitioner (PMI-ACP)</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-knoxville-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700">Organizational Development Specialist</span>
+                      <span className="text-gray-700">Lean Six Sigma Green Belt</span>
                     </li>
                   </ul>
                 </div>
@@ -116,6 +114,37 @@ export default function About() {
                     Explore Our Services
                   </Link>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Client Logos Section */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Clients</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Trusted by leading organizations across industries
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
+              {/* Placeholder logos - client will upload real logos later */}
+              <div className="bg-light-gray border-2 border-dashed border-gray-300 rounded-lg p-8 w-full aspect-video flex items-center justify-center">
+                <span className="text-gray-400 text-sm font-medium text-center">Chick-fil-A<br />Logo</span>
+              </div>
+              <div className="bg-light-gray border-2 border-dashed border-gray-300 rounded-lg p-8 w-full aspect-video flex items-center justify-center">
+                <span className="text-gray-400 text-sm font-medium text-center">Aflac<br />Logo</span>
+              </div>
+              <div className="bg-light-gray border-2 border-dashed border-gray-300 rounded-lg p-8 w-full aspect-video flex items-center justify-center">
+                <span className="text-gray-400 text-sm font-medium text-center">UBS Financial<br />Services Logo</span>
+              </div>
+              <div className="bg-light-gray border-2 border-dashed border-gray-300 rounded-lg p-8 w-full aspect-video flex items-center justify-center">
+                <span className="text-gray-400 text-sm font-medium text-center">Georgia Department<br />of Health Logo</span>
+              </div>
+              <div className="bg-light-gray border-2 border-dashed border-gray-300 rounded-lg p-8 w-full aspect-video flex items-center justify-center">
+                <span className="text-gray-400 text-sm font-medium text-center">Prinzo Group<br />Logo</span>
               </div>
             </div>
           </div>

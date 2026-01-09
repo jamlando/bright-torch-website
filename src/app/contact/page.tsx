@@ -243,23 +243,6 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Scheduling Placeholder */}
-                <div className="bg-knoxville-orange/10 p-6 rounded-lg border border-knoxville-orange/20">
-                  <h3 className="text-xl font-semibold text-slate-blue mb-4">Schedule a Consultation</h3>
-                  <p className="text-gray-700 mb-4">
-                    Ready to discuss your organization's transformation needs? 
-                    Schedule a complimentary 30-minute consultation to explore how we can help.
-                  </p>
-                  <div className="bg-white p-4 rounded border-2 border-dashed border-gray-300 text-center">
-                    <p className="text-gray-500 font-medium">
-                      Scheduling integration coming soon
-                    </p>
-                    <p className="text-sm text-gray-400 mt-2">
-                      For now, please use the contact form or email directly
-                    </p>
-                  </div>
-                </div>
-
                 {/* Response Time */}
                 <div className="bg-malibu-blue/10 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold text-slate-blue mb-4">What to Expect</h3>

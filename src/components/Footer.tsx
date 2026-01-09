@@ -21,7 +21,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link 
-                href="https://linkedin.com/in/nicholas-hymer" 
+                href="https://www.linkedin.com/company/brighttorchconsulting/posts/?feedView=all" 
                 className="text-gray-300 hover:text-knoxville-orange transition-colors duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
