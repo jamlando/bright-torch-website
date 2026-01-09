@@ -71,7 +71,7 @@ export default function About() {
                 {/* Certifications */}
                 <div className="mb-8">
                   <h3 className="text-2xl font-semibold mb-4 text-slate-blue">Certifications & Expertise</h3>
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 mb-6">
                     <li className="flex items-start">
                       <div className="w-2 h-2 bg-knoxville-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700">Prosci Certified Change Practitioner</span>
@@ -81,6 +81,15 @@ export default function About() {
                       <span className="text-gray-700">Lean Six Sigma Green Belt</span>
                     </li>
                   </ul>
+                  <div className="mt-4">
+                    <Image
+                      src="/images/prosciCertificate.jpg"
+                      alt="Prosci Certified Change Practitioner Certificate"
+                      width={600}
+                      height={400}
+                      className="rounded-lg shadow-lg"
+                    />
+                  </div>
                 </div>
 
               </div>
