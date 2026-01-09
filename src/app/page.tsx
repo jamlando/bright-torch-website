@@ -13,7 +13,7 @@ export default function Home() {
         <section className="relative h-screen overflow-hidden">
           <img
             src="/images/hero-bg.jpg"
-            alt="Monumental statue holding a torch, symbolizing illumination and transformation"
+            alt="Professional workspace representing organizational transformation"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-start justify-center pt-16 sm:pt-20 md:pt-24">
