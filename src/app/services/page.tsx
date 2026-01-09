@@ -286,9 +286,6 @@ export default function Services() {
                   Workday Implementation. Successfully guided a 2,000+ employee organization through 
                   a comprehensive HR and financial system transformation.
                 </p>
-                <Link href="/case-studies" className="btn-primary">
-                  View Case Studies
-                </Link>
               </div>
               <div className="relative">
                 <Image
