@@ -11,31 +11,6 @@ export default function Services() {
 
   const services = [
     {
-      id: 'strategy',
-      title: 'Strategy',
-      icon: (
-        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-        </svg>
-      ),
-      shortDescription: 'Clear direction and actionable plans that align with your organization\'s vision.',
-      fullDescription: 'Our strategy services help organizations develop clear, actionable plans that bridge the gap between vision and execution. We work with leadership teams to create comprehensive roadmaps that align people, processes, and purpose with strategic objectives.',
-      benefits: [
-        'Comprehensive strategic planning and roadmap development',
-        'Alignment of organizational vision with operational capabilities',
-        'Stakeholder engagement and buy-in strategies',
-        'Risk assessment and mitigation planning',
-        'Performance metrics and success measurement frameworks'
-      ],
-      deliverables: [
-        'Strategic roadmap with clear milestones',
-        'Stakeholder analysis and engagement plan',
-        'Risk assessment and mitigation strategies',
-        'Performance measurement framework',
-        'Implementation timeline and resource requirements'
-      ]
-    },
-    {
       id: 'change',
       title: 'Change Management',
       icon: (
@@ -84,6 +59,31 @@ export default function Services() {
         'Standard operating procedures and documentation',
         'Performance monitoring and improvement systems',
         'Training programs for operational excellence'
+      ]
+    },
+    {
+      id: 'strategy',
+      title: 'Strategy',
+      icon: (
+        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      ),
+      shortDescription: 'Clear direction and actionable plans that align with your organization\'s vision.',
+      fullDescription: 'Our strategy services help organizations develop clear, actionable plans that bridge the gap between vision and execution. We work with leadership teams to create comprehensive roadmaps that align people, processes, and purpose with strategic objectives.',
+      benefits: [
+        'Comprehensive strategic planning and roadmap development',
+        'Alignment of organizational vision with operational capabilities',
+        'Stakeholder engagement and buy-in strategies',
+        'Risk assessment and mitigation planning',
+        'Performance metrics and success measurement frameworks'
+      ],
+      deliverables: [
+        'Strategic roadmap with clear milestones',
+        'Stakeholder analysis and engagement plan',
+        'Risk assessment and mitigation strategies',
+        'Performance measurement framework',
+        'Implementation timeline and resource requirements'
       ]
     },
     {
