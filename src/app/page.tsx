@@ -140,7 +140,7 @@ export default function Home() {
               </div>
               <div className="relative">
                 <Image
-                  src="/images/angela-loria-naq7jbsipqE-unsplash.jpg"
+                  src="/images/about-section.jpg"
                   alt="Professional team collaboration representing Bright Torch Consulting's approach"
                   width={500}
                   height={600}
