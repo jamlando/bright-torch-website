@@ -8,13 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2">
-            <Image
-              src="/images/brightTorchLogoV1.png"
-              alt="Bright Torch Consulting"
-              width={200}
-              height={101}
-              className="h-12 w-auto mb-4"
-            />
+            <div className="inline-block p-3 rounded-lg bg-white shadow-lg mb-4">
+              <Image
+                src="/images/brightTorchLogoV1.png"
+                alt="Bright Torch Consulting"
+                width={200}
+                height={101}
+                className="h-12 w-auto"
+              />
+            </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Helping organizations turn strategy into results through people, process, and purpose. 
               Making change clear, intentional, and sustainable.
