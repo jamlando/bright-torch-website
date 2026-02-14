@@ -282,9 +282,9 @@ export default function Services() {
                   shifts, we've guided leaders through complex change initiatives.
                 </p>
                 <p className="text-lg text-gray-600 mb-8">
-                  <strong>Featured Case Study:</strong> Georgia Department of Public Health - 
-                  Workday Implementation. Successfully guided a 2,000+ employee organization through 
-                  a comprehensive HR and financial system transformation.
+                  <strong>Featured Engagement:</strong> Serving as change lead for a 2,000+ employee 
+                  state agency, driving adoption, leadership alignment, and operational readiness across 
+                  Finance, Human Capital Management, and Procurement during enterprise Workday implementation.
                 </p>
               </div>
               <div className="relative">

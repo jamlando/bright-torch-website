@@ -18,12 +18,11 @@ export default function Home() {
           />
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-start justify-center pt-16 sm:pt-20 md:pt-24">
             <div className="text-center text-white">
-              <h1 className="text-[5rem] font-bold mb-4 sm:mb-6 drop-shadow-2xl" style={{ color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5)' }}>
-                Illuminate what&apos;s possible.
+              <h1 className="text-[4.5rem] sm:text-[5.5rem] md:text-[6.5rem] font-bold mb-4 sm:mb-6 drop-shadow-2xl leading-tight" style={{ color: 'white', textShadow: '2px 2px 6px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.6)' }}>
+                Strategy is easy. Adoption is hard.
               </h1>
-              <p className="text-[2rem] mb-6 sm:mb-8 max-w-3xl mx-auto drop-shadow-xl" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.5)' }}>
-                Helping organizations turn strategy into results<br className="hidden sm:block" />
-                through people, process, and purpose.
+              <p className="text-lg sm:text-xl md:text-[1.35rem] mb-6 sm:mb-8 max-w-3xl mx-auto drop-shadow-xl font-medium opacity-95" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.5)' }}>
+                Bright Torch Consulting helps organizations align people, process, and technology to turn transformation into measurable results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/about" className="btn-blue w-full sm:w-auto" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
@@ -127,8 +126,8 @@ export default function Home() {
                   strategy and execution during organizational transformations.
                 </p>
                 <blockquote className="text-xl text-slate-blue font-medium italic mb-6 border-l-4 border-knoxville-orange pl-6">
-                  "We believe that sustainable transformation happens when these three elements align, 
-                  creating a powerful foundation for lasting change and measurable success."
+                  "Real transformation occurs when people, process, and technology work in alignment. 
+                  That's when strategy turns into measurable, lasting results."
                 </blockquote>
                 <p className="text-lg text-gray-600 mb-8">
                   Our approach combines deep expertise in change management with practical, results-driven 
