@@ -27,10 +27,20 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission (placeholder for future service integration)
+    setSubmitStatus('idle');
+
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        setSubmitStatus('error');
+        return;
+      }
       setSubmitStatus('success');
       setFormData({
         name: '',
@@ -40,7 +50,7 @@ export default function ContactPage() {
         message: '',
         serviceInterest: ''
       });
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -78,7 +88,7 @@ export default function ContactPage() {
               {submitStatus === 'success' && (
                 <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
                   <p className="text-green-800 font-medium">
-                    Thank you for your message! We'll get back to you within 24 hours.
+                    Thank you for your message! We'll get back to you as soon as possible.
                   </p>
                 </div>
               )}

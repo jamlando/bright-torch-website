@@ -41,7 +41,7 @@ export default function About() {
         </section>
 
         {/* Nicholas Hymer Bio Section */}
-        <section className="py-16">
+        <section className="pt-16 pb-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               <div>
@@ -71,27 +71,32 @@ export default function About() {
                 </div>
 
                 {/* Certifications */}
-                <div className="mb-8">
+                <div className="mb-2">
                   <h3 className="text-2xl font-semibold mb-4 text-slate-blue">Certifications & Expertise</h3>
-                  <ul className="space-y-3 mb-6">
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-knoxville-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700">Prosci Certified Change Practitioner</span>
+                  <ul className="space-y-1">
+                    <li className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-knoxville-orange rounded-full flex-shrink-0"></div>
+                      <span className="text-gray-700 flex-1">Prosci Certified Change Practitioner</span>
+                      <Image
+                        src="/images/prosciCertificate.jpg"
+                        alt="Prosci Certified Change Practitioner"
+                        width={104}
+                        height={104}
+                        className="object-contain flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28"
+                      />
                     </li>
-                    <li className="flex items-start">
-                      <div className="w-2 h-2 bg-knoxville-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700">Lean Six Sigma Green Belt</span>
+                    <li className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-knoxville-orange rounded-full flex-shrink-0"></div>
+                      <span className="text-gray-700 flex-1">Lean Six Sigma Green Belt</span>
+                      <Image
+                        src="/images/lean-six-sigma-green-belt.png"
+                        alt="Lean Six Sigma Green Belt"
+                        width={104}
+                        height={104}
+                        className="object-contain flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28"
+                      />
                     </li>
                   </ul>
-                  <div className="mt-4">
-                    <Image
-                      src="/images/prosciCertificate.jpg"
-                      alt="Prosci Certified Change Practitioner Certificate"
-                      width={600}
-                      height={400}
-                      className="rounded-lg shadow-lg"
-                    />
-                  </div>
                 </div>
 
               </div>
@@ -131,7 +136,7 @@ export default function About() {
         </section>
 
         {/* Our Experience and Partners Section */}
-        <section className="py-16">
+        <section className="pt-8 pb-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Experience and Partners</h2>
@@ -140,59 +145,59 @@ export default function About() {
               </p>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
-              <div className="w-full aspect-video flex items-center justify-center p-4">
+            <div className="grid grid-cols-3 gap-6 sm:gap-8 max-w-2xl mx-auto">
+              <div className="aspect-square flex items-center justify-center p-3 bg-white rounded-lg border border-gray-100">
                 <Image
                   src="/images/mauldin-jenkins-logo.jpg"
                   alt="Mauldin & Jenkins LLC"
-                  width={200}
-                  height={100}
-                  className="object-contain max-h-full"
+                  width={96}
+                  height={96}
+                  className="object-contain max-w-[80px] max-h-[80px] w-full h-full"
                 />
               </div>
-              <div className="w-full aspect-video flex items-center justify-center p-4">
+              <div className="aspect-square flex items-center justify-center p-3 bg-white rounded-lg border border-gray-100">
                 <Image
                   src="/images/Chick-fil-A-header-logo.svg"
                   alt="Chick-fil-A Logo"
-                  width={200}
-                  height={100}
-                  className="object-contain max-h-full"
+                  width={96}
+                  height={96}
+                  className="object-contain max-w-[80px] max-h-[80px] w-full h-full"
                 />
               </div>
-              <div className="w-full aspect-video flex items-center justify-center p-4">
+              <div className="aspect-square flex items-center justify-center p-3 bg-white rounded-lg border border-gray-100">
                 <Image
                   src="/images/Aflac+Logo.png"
                   alt="Aflac Logo"
-                  width={200}
-                  height={100}
-                  className="object-contain max-h-full"
+                  width={96}
+                  height={96}
+                  className="object-contain max-w-[80px] max-h-[80px] w-full h-full"
                 />
               </div>
-              <div className="w-full aspect-video flex items-center justify-center p-4">
+              <div className="aspect-square flex items-center justify-center p-3 bg-white rounded-lg border border-gray-100">
                 <Image
                   src="/images/UBS_Logo_Semibold.svg"
                   alt="UBS Financial Services Logo"
-                  width={200}
-                  height={100}
-                  className="object-contain max-h-full"
+                  width={96}
+                  height={96}
+                  className="object-contain max-w-[80px] max-h-[80px] w-full h-full"
                 />
               </div>
-              <div className="w-full aspect-video flex items-center justify-center p-4">
+              <div className="aspect-square flex items-center justify-center p-3 bg-white rounded-lg border border-gray-100">
                 <Image
                   src="/images/georgiadph_logo.jpg"
                   alt="Georgia Department of Health Logo"
-                  width={200}
-                  height={100}
-                  className="object-contain max-h-full"
+                  width={96}
+                  height={96}
+                  className="object-contain max-w-[80px] max-h-[80px] w-full h-full"
                 />
               </div>
-              <div className="w-full aspect-video flex items-center justify-center p-4">
+              <div className="aspect-square flex items-center justify-center p-3 bg-white rounded-lg border border-gray-100">
                 <Image
                   src="/images/the_prinzo_group_logo.jpg"
                   alt="Prinzo Group Logo"
-                  width={200}
-                  height={100}
-                  className="object-contain max-h-full"
+                  width={96}
+                  height={96}
+                  className="object-contain max-w-[80px] max-h-[80px] w-full h-full"
                 />
               </div>
             </div>
