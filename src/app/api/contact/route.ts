@@ -1,13 +1,12 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const TO_EMAIL = 'nhymer@brighttorchconsulting.com';
 const SUBJECT = 'Bright Torch Consulting Request';
 
 export async function POST(request: Request) {
-  if (!process.env.RESEND_API_KEY) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
     return NextResponse.json(
       { error: 'Email is not configured. Set RESEND_API_KEY in environment.' },
       { status: 503 }
@@ -31,6 +30,8 @@ export async function POST(request: Request) {
       message ?? '',
     ].join('\n');
 
+    // Instantiate only when key is present so build passes without RESEND_API_KEY
+    const resend = new Resend(apiKey);
     const { data, error } = await resend.emails.send({
       from,
       to: TO_EMAIL,
