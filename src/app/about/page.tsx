@@ -52,7 +52,7 @@ export default function About() {
                   <p className="text-lg text-gray-600 mb-6">
                     Nicholas Hymer is the founder and principal consultant of Bright Torch Consulting, 
                     bringing over 15 years of experience in organizational transformation, change management, 
-                    and strategic execution with Fortune 250 companies in both public and private sectors.
+                    and leading strategic execution initiatives for Fortune 250 companies and public-sector agencies.
                   </p>
                   
                   <p className="text-lg text-gray-600 mb-6">
