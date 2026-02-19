@@ -1,14 +1,17 @@
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 
 const TO_EMAIL = 'nhymer@brighttorchconsulting.com';
 const SUBJECT = 'Bright Torch Consulting Request';
 
 export async function POST(request: Request) {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
+  // Check for Gmail SMTP credentials
+  const smtpUser = process.env.SMTP_USER;
+  const smtpPass = process.env.SMTP_PASS;
+
+  if (!smtpUser || !smtpPass) {
     return NextResponse.json(
-      { error: 'Email is not configured. Set RESEND_API_KEY in environment.' },
+      { error: 'Email is not configured. Set SMTP_USER and SMTP_PASS (Gmail App Password) in environment.' },
       { status: 503 }
     );
   }
@@ -17,9 +20,18 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { name, email, phone, company, message, serviceInterest } = body;
 
-    const from = process.env.RESEND_FROM ?? 'Bright Torch Consulting <onboarding@resend.dev>';
+    // Create transporter with Gmail SMTP
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true, // true for 465, false for other ports
+      auth: {
+        user: smtpUser,
+        pass: smtpPass, // Gmail App Password
+      },
+    });
 
-    const text = [
+    const emailText = [
       `Name: ${name ?? ''}`,
       `Email: ${email ?? ''}`,
       `Phone: ${phone ?? '(not provided)'}`,
@@ -30,23 +42,18 @@ export async function POST(request: Request) {
       message ?? '',
     ].join('\n');
 
-    // Instantiate only when key is present so build passes without RESEND_API_KEY
-    const resend = new Resend(apiKey);
-    const { data, error } = await resend.emails.send({
-      from,
+    const info = await transporter.sendMail({
+      from: `"Bright Torch Consulting" <${smtpUser}>`,
       to: TO_EMAIL,
       subject: SUBJECT,
-      text,
+      text: emailText,
       replyTo: email || undefined,
     });
 
-    if (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 });
-    }
-
-    return NextResponse.json(data);
+    return NextResponse.json({ message: 'Email sent successfully', messageId: info.messageId });
   } catch (err) {
     const message = err instanceof Error ? err.message : 'Failed to send message';
+    console.error('Email send error:', err);
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }
